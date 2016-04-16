@@ -1,9 +1,12 @@
-﻿public enum States
+﻿namespace StateSystem
 {
-    MainMenu,
-    InGame,
-    PlayMenu,
-    Settings,
-    Store,
-    EndGame}
-;
+    public enum States
+    {
+        MainMenu,
+        InGame,
+        PlayMenu,
+        Settings,
+        Store,
+        EndGame
+    };
+}

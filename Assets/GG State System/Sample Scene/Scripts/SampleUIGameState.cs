@@ -6,15 +6,15 @@ public class SampleUIGameState : GameState
 {
     [SerializeField] private GameObject Panel;
 
-    protected override void EnableService(Action callback)
+    protected override void EnableService(Action CommanderControl)
     {
         Panel.SetActive(true);
-        base.Enable(callback);
+        CommanderControl();
     }
 
-    protected override void DisableService(Action callback)
+    protected override void DisableService(Action CommanderControl)
     {
         Panel.SetActive(false);
-        base.Disable(callback);
+        CommanderControl();;
     }
 }
