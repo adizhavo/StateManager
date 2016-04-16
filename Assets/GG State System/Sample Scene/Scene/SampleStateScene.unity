@@ -385,7 +385,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StartParallelChildState
+        m_MethodName: StartChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 276625068}
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: SwitchMainStateTo
+        m_MethodName: SwitchMainState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 357115413}
@@ -763,7 +763,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StartParallelChildState
+        m_MethodName: StartChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 537394970}
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StopParallelChildState
+        m_MethodName: KillChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1267047227}
@@ -1155,7 +1155,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: SwitchMainStateTo
+        m_MethodName: SwitchMainState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 925676465}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StartParallelChildState
+        m_MethodName: StartChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1134629381}
@@ -1614,7 +1614,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StartParallelChildState
+        m_MethodName: StartChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1267047227}
@@ -1701,14 +1701,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartState:
     State: 0
-  mapper:
-    savedStates:
-    - {fileID: 1574859825}
-    - {fileID: 1822424383}
-    - {fileID: 1554920707}
-    - {fileID: 160166750}
-    - {fileID: 276493831}
-    - {fileID: 966778894}
+  Commander:
+    overallStateHistory:
+      savedHistoryStates: []
+    mainStateHistory:
+      savedHistoryStates: []
+    childStateHistory:
+      savedHistoryStates: []
 --- !u!4 &1375245589
 Transform:
   m_ObjectHideFlags: 0
@@ -1870,7 +1869,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: StopParallelChildState
+        m_MethodName: KillChildState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 537394970}
@@ -2633,7 +2632,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1375245588}
-        m_MethodName: SwitchMainStateTo
+        m_MethodName: SwitchMainState
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1986006808}
